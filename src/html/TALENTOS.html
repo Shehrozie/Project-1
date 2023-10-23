@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Talentos</title>
+  </head>
+  <body>
+    <!-- Navbar Start Here -->
+    <nav
+      id="navBar"
+      class="md:py-10 py-5 fixed left-0 right-0 transition-all ease-in-out duration-300"
+    >
+      <div
+        class="container mx-auto flex w-full justify-between md:px-6 px-4 items-center"
+      >
+        <a
+          href="index.html"
+          id="nav-branding"
+          class="md:text-4xl text-2xl font-bold"
+          >LOGO</a
+        >
+
+        <ul id="nav-menu" class="lg:flex hidden space-x-10">
+          <li id="nav-item" class="text-2xl font-light tracking-wide">
+            <a id="nav-link" href="./escenarios.html">ESCENARIOS</a>
+          </li>
+          <li id="nav-item" class="text-2xl font-light tracking-wide">
+            <a id="nav-link" class="font-bold" href="./TALENTOS.html"
+              >TALENTOS</a
+            >
+          </li>
+          <li id="nav-item" class="text-2xl font-light tracking-wide">
+            <a id="nav-link" href="./PROGRAMA.html">PROGRAMA</a>
+          </li>
+          <li id="nav-item" class="text-2xl font-light tracking-wide">
+            <a id="nav-link" href="./CONTACTO.html">CONTACTO</a>
+          </li>
+        </ul>
+        <button
+          id="hamburgar"
+          class="border rounded-lg h-10 w-10 lg:hidden flex flex-col justify-center items-center"
+          onclick="Openbar()"
+        >
+          <span id="bar" class="h-px bg-black w-6 block"></span>
+          <span id="bar" class="h-px bg-black w-6 block my-1.5"></span>
+          <span id="bar" class="h-px bg-black w-6 block"></span>
+        </button>
+      </div>
+      <!-- side-bar -->
+      <div
+        class="sidebar fixed top-[-1300px] bottom-0 lg:left-0 w-full text-center bg-[#DCD9CA] shadow h-screen lg:hidden duration-1000"
+      >
+        <div class="text-gray-100 text-xl">
+          <div
+            class="p-2.5 mt-1 flex items-center justify-between container mx-auto p-6 rounded-md"
+          >
+            <h1 class="ml-3 text-2xl text-black font-bold">LOGO</h1>
+            <h1 onclick="Openbar()" class="cursor-pointer text-black">X</h1>
+          </div>
+          <div class="flex justify-center mt-32">
+            <ul>
+              <li class="text-black">
+                <a href="./escenarios.html">ESCENARIOS</a>
+              </li>
+              <li class="mt-10 text-black">
+                <a class="font-bold" href="./TALENTOS.html">TALENTOS</a>
+              </li>
+              <li class="mt-10 text-black">
+                <a href="./PROGRAMA.html">PROGRAMA</a>
+              </li>
+              <li class="mt-10 text-black">
+                <a href="./CONTACTO.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="bg-[#FFFFFF] bg-center bg-cover bg-no-repeat h-screen flex items-center"
+    >
+      <div class="container mx-auto md:px-20 px-4">
+        <h1 class="md:text-5xl text-3xl font-bold mb-4">Talentos</h1>
+        <p class="md:text-4xl text-2xl">
+          Ibus, senat, occhuis? Ego caetra <br />
+          quitrum menam viribus. Fulem <br />
+          perei talestrum poterum nota <br />
+          tata, multod contem
+        </p>
+      </div>
+    </header>
+    <!-- Navbar End Here -->
+
+    <!-- Profile Card Start Here -->
+    <div id="profile_card" class="w-full flex flex-wrap">
+      <div
+        id="profile1"
+        class="bg-[url('/img/profile3.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile2"
+        class="bg-[url('/img/profile4.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile3"
+        class="bg-[url('/img/profile3.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile4"
+        class="bg-[url('/img/profile4.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile5"
+        class="bg-[url('/img/profile3.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile6"
+        class="bg-[url('/img/profile4.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile7"
+        class="bg-[url('/img/profile3.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile8"
+        class="bg-[url('/img/profile4.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile9"
+        class="bg-[url('/img/profile3.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile10"
+        class="bg-[url('/img/profile4.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile11"
+        class="bg-[url('/img/profile3.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile12"
+        class="bg-[url('/img/profile4.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile13"
+        class="bg-[url('/img/profile3.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile14"
+        class="bg-[url('/img/profile4.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile15"
+        class="bg-[url('/img/profile3.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile16"
+        class="bg-[url('/img/profile4.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile17"
+        class="bg-[url('/img/profile3.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile18"
+        class="bg-[url('/img/profile4.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile19"
+        class="bg-[url('/img/profile3.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile20"
+        class="bg-[url('/img/profile4.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile21"
+        class="bg-[url('/img/profile3.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile22"
+        class="bg-[url('/img/profile4.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile23"
+        class="bg-[url('/img/profile3.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile24"
+        class="bg-[url('/img/profile4.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="profile25"
+        class="bg-[url('/img/profile3.jpg')] bg-center bg-cover bg-no-repeat xl:h-96 lg:h-80 md:h-72 sm:h-96 h-[30rem] xl:w-1/5 lg:w-[25%] md:w-[33.3%] sm:w-1/2 w-full flex justify-end flex-col"
+      >
+        <div class="md:m-5 sm:m-3 m-7">
+          <h1 class="text-xl font-bold">Nombre del chef</h1>
+          <p class="text-sm">
+            quitrum menam viribus. Fulem perei talestrum poteru
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Profile Card End Here -->
+
+    <!-- Footer Start Here -->
+    <footer class="flex h-40 items-center md:px-6 px-4 bg-[#C8C6BA]">
+      <div
+        class="container mx-auto flex md:flex-nowrap flex-wrap justify-between"
+      >
+        <div>
+          <p class="md:text-2xl text-xs">
+            FOOTER - DIRECCIÓN Ad C. Lum ilincer ebatissum simerfe stratil ubi
+            sentus perit
+          </p>
+        </div>
+        <div
+          class="flex items-center space-x-2 md:w-auto w-full md:justify-start justify-end md:mt-0 mt-4"
+        >
+          <a href="#">
+            <ion-icon name="logo-facebook" class="h-8 w-8"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-instagram" class="h-8 w-8"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End Here -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>ESCENARIOS</title>
+  </head>
+  <body>
+    <!-- Navbar Start Here -->
+    <nav
+      id="navBar"
+      class="md:py-10 py-5 fixed left-0 right-0 transition-all ease-in-out duration-300"
+    >
+      <div
+        class="container mx-auto flex w-full justify-between md:px-6 px-4 items-center"
+      >
+        <a
+          href="index.html"
+          id="nav-branding"
+          class="md:text-4xl text-2xl font-bold"
+          >LOGO</a
+        >
+
+        <ul id="nav-menu" class="lg:flex hidden space-x-10">
+          <li id="nav-item" class="text-2xl font-light tracking-wide">
+            <a id="nav-link" class="font-bold" href="./escenarios.html"
+              >ESCENARIOS</a
+            >
+          </li>
+          <li id="nav-item" class="text-2xl font-light tracking-wide">
+            <a id="nav-link" href="./TALENTOS.html">TALENTOS</a>
+          </li>
+          <li id="nav-item" class="text-2xl font-light tracking-wide">
+            <a id="nav-link" href="./PROGRAMA.html">PROGRAMA</a>
+          </li>
+          <li id="nav-item" class="text-2xl font-light tracking-wide">
+            <a id="nav-link" href="./CONTACTO.html">CONTACTO</a>
+          </li>
+        </ul>
+        <button
+          id="hamburgar"
+          class="border rounded-lg h-10 w-10 lg:hidden flex flex-col justify-center items-center"
+          onclick="Openbar()"
+        >
+          <span id="bar" class="h-px bg-black w-6 block"></span>
+          <span id="bar" class="h-px bg-black w-6 block my-1.5"></span>
+          <span id="bar" class="h-px bg-black w-6 block"></span>
+        </button>
+      </div>
+      <!-- side-bar -->
+      <div
+        class="sidebar fixed top-[-1300px] bottom-0 lg:left-0 w-full text-center bg-[#DCD9CA] shadow h-screen lg:hidden duration-1000"
+      >
+        <div class="text-gray-100 text-xl">
+          <div
+            class="p-2.5 mt-1 flex items-center justify-between container mx-auto p-6 rounded-md"
+          >
+            <h1 class="ml-3 text-2xl text-black font-bold">LOGO</h1>
+            <h1 onclick="Openbar()" class="cursor-pointer text-black">X</h1>
+          </div>
+          <div class="flex justify-center mt-32">
+            <ul>
+              <li class="text-black">
+                <a class="font-bold" href="./escenarios.html">ESCENARIOS</a>
+              </li>
+              <li class="mt-10 text-black">
+                <a href="./TALENTOS.html">TALENTOS</a>
+              </li>
+              <li class="mt-10 text-black">
+                <a href="./PROGRAMA.html">PROGRAMA</a>
+              </li>
+              <li class="mt-10 text-black">
+                <a href="./CONTACTO.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      id="header"
+      class="bg-[url('/img/images.jpeg')] bg-center bg-cover bg-no-repeat h-screen flex items-center"
+    >
+      <div class="container mx-auto md:px-20 px-4">
+        <h1 class="text-2xl font-bold mb-4">ESCENARIOS</h1>
+        <p class="text-lg">
+          2000 accesos cada día <br />
+          500 accesos VIP cada día
+        </p>
+      </div>
+    </header>
+    <!-- Navbar End Here -->
+
+    <!-- ESCENARIOS Start Here -->
+    <div
+      id="cards_container"
+      class="bg-[#FFFFFF] flex justify-center items-center pt-20 pb-20"
+    >
+      <div
+        id="cards_part1"
+        class="container w-full bg-[#FFFFFF] flex flex-wrap items-start sm:justify-between justify-center gap-y-16"
+      >
+        <div
+          id="card1"
+          class="container flex flex-col lg:w-[30%] sm:w-[45%] w-[90%] bg-[#FFFFFF]"
+        >
+          <img src="/img/images.jpeg" alt="Loading" />
+          <h1 class="text-3xl font-bold my-5">Carpas VIP</h1>
+          <p class="2xl:text-2xl md:text-sm">
+            Donde las marcas invitan a sus mejores clientes con experiencias
+            privadas en torno a la gastronomía, la magia y la música
+          </p>
+        </div>
+
+        <div
+          id="card2"
+          class="container flex flex-col lg:w-[30%] sm:w-[45%] w-[90%] bg-[#FFFFFF]"
+        >
+          <img src="/img/images.jpeg" alt="Loading" />
+          <h1 class="text-3xl font-bold my-5">Quioscos 360º</h1>
+          <p class="2xl:text-2xl md:text-sm">
+            Distintas marcas gourmet dan a conocer sus productos en espa- cios
+            circulares con áreas lounge privadas.
+          </p>
+        </div>
+
+        <div
+          id="card3"
+          class="container flex flex-col lg:w-[30%] sm:w-[45%] w-[90%] bg-[#FFFFFF]"
+        >
+          <img src="/img/images.jpeg" alt="Loading" />
+          <h1 class="text-3xl font-bold my-5">Espacios gourmet</h1>
+          <p class="2xl:text-2xl md:text-sm">
+            Más de 80 espacios donde chefs y restaurantes de México ofrecen
+            gastronomía mexicana, internacional, contemporánea y cocina de
+            fuego. Más de 200 etiquetas de vino y marcas de destilados Premium
+            Productos gourmet: quesos del mundo, ibéricos, caviar…
+          </p>
+        </div>
+
+        <div
+          id="card4"
+          class="container flex flex-col lg:w-[30%] sm:w-[45%] w-[90%] bg-[#FFFFFF]"
+        >
+          <img src="/img/images.jpeg" alt="Loading" />
+          <h1 class="text-3xl font-bold my-5">Carpas temáticas</h1>
+          <p class="2xl:text-2xl md:text-sm">
+            Tres carpas donde, durante todo el día, se darán master class en
+          </p>
+        </div>
+
+        <div
+          id="card5"
+          class="container flex flex-col lg:w-[30%] sm:w-[45%] w-[90%] bg-[#FFFFFF]"
+        >
+          <img src="/img/images.jpeg" alt="Loading" />
+          <h1 class="text-3xl font-bold my-5">Kids Lounge</h1>
+          <p class="2xl:text-2xl md:text-sm">
+            Área para niños con juegos, co-mida y entretenimiento.
+          </p>
+        </div>
+
+        <div
+          id="card6"
+          class="container flex flex-col lg:w-[30%] sm:w-[45%] w-[90%] bg-[#FFFFFF]"
+        >
+          <img src="/img/images.jpeg" alt="Loading" />
+          <h1 class="text-3xl font-bold my-5">Boutique Cigar Bar.</h1>
+          <p class="2xl:text-2xl md:text-sm">
+            Con marcas de puros Premium de diferentes zonas del Caribe.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- ESCENARIOS End Here -->
+
+    <!-- Footer Start Here -->
+    <footer class="flex h-40 items-center md:px-6 px-4 bg-[#C8C6BA]">
+      <div
+        class="container mx-auto flex md:flex-nowrap flex-wrap justify-between"
+      >
+        <div>
+          <p class="md:text-2xl text-xs">
+            FOOTER - DIRECCIÓN Ad C. Lum ilincer ebatissum simerfe stratil ubi
+            sentus perit
+          </p>
+        </div>
+        <div
+          class="flex items-center space-x-2 md:w-auto w-full md:justify-start justify-end md:mt-0 mt-4"
+        >
+          <a href="#">
+            <ion-icon name="logo-facebook" class="h-8 w-8"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-instagram" class="h-8 w-8"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End Here -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

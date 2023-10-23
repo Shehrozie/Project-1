@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Navbar Start Here -->
+    <nav
+      id="navBar"
+      class="md:py-10 py-5 fixed left-0 right-0 transition-all ease-in-out duration-300"
+    >
+      <div
+        class="container mx-auto flex w-full justify-between md:px-6 px-4 items-center"
+      >
+        <a
+          href="index.html"
+          id="nav-branding"
+          class="md:text-4xl text-2xl font-bold"
+          >LOGO</a
+        >
+
+        <ul id="nav-menu" class="lg:flex hidden space-x-10">
+          <li id="nav-item" class="text-2xl font-light tracking-wide">
+            <a id="nav-link" href="escenarios.html">ESCENARIOS</a>
+          </li>
+          <li id="nav-item" class="text-2xl font-light tracking-wide">
+            <a id="nav-link" href="TALENTOS.html">TALENTOS</a>
+          </li>
+          <li id="nav-item" class="text-2xl font-light tracking-wide">
+            <a id="nav-link" href="PROGRAMA.html">PROGRAMA</a>
+          </li>
+          <li id="nav-item" class="text-2xl font-light tracking-wide">
+            <a id="nav-link" href="CONTACTO.html">CONTACTO</a>
+          </li>
+        </ul>
+        <button
+          id="hamburgar"
+          class="border rounded-lg h-10 w-10 lg:hidden flex flex-col justify-center items-center"
+          onclick="Openbar()"
+        >
+          <span id="bar" class="h-px bg-black w-6 block"></span>
+          <span id="bar" class="h-px bg-black w-6 block my-1.5"></span>
+          <span id="bar" class="h-px bg-black w-6 block"></span>
+        </button>
+      </div>
+      <!-- side-bar -->
+      <div
+        class="sidebar fixed top-[-1300px] bottom-0 lg:left-0 w-full text-center bg-[#DCD9CA] shadow h-screen lg:hidden duration-1000"
+      >
+        <div class="text-gray-100 text-xl">
+          <div
+            class="p-2.5 mt-1 flex items-center justify-between container mx-auto p-6 rounded-md"
+          >
+            <h1 class="ml-3 text-2xl text-black font-bold">LOGO</h1>
+            <h1 onclick="Openbar()" class="cursor-pointer text-black">X</h1>
+          </div>
+          <div class="flex justify-center mt-32">
+            <ul>
+              <li class="text-black">
+                <a href="./escenarios.html">ESCENARIOS</a>
+              </li>
+              <li class="mt-10 text-black">
+                <a href="./TALENTOS.html">TALENTOS</a>
+              </li>
+              <li class="mt-10 text-black">
+                <a href="./PROGRAMA.html">PROGRAMA</a>
+              </li>
+              <li class="mt-10 text-black">
+                <a href="./CONTACTO.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header
+      class="bg-[url('/img/images.jpeg')] bg-center bg-cover bg-no-repeat h-screen flex items-center"
+    >
+      <div class="container mx-auto md:px-20 px-4">
+        <h1 class="text-2xl font-bold mb-4">F&W FESTIVAL</h1>
+        <p class="text-lg">
+          12 y 13 de noviembre Food & Wine<br />Festival en Campo Marte
+        </p>
+        <button
+          class="outline-none focus:outline-none bg-[#F8F7F4] px-12 py-4 rounded-lg text-xl tracking-widest mt-14"
+        >
+          CALL TO ACTION
+        </button>
+      </div>
+    </header>
+    <!-- Navbar End Here -->
+
+    <!-- About Us Start Here -->
+    <div id="Aboutus" class="md:p-28 p-10">
+      <div class="container lg:w-1/2 w-full">
+        <h1 class="text-4xl font-bold">About us</h1>
+        <p class="xl:text-3xl mt-10 lg:text-2xl text-sm">
+          “Food & Wine Festival, presenta un suculento programa de experiencias
+          durante los dos días de actividad donde los asistentes podrán aprender
+          sobre productos y vinos gourmet de la manos de expertos y disfrutar de
+          una gastronomía temática, original, exótica...., sorprendente. Además,
+          cada año apostamos por los nuevos talentos de nuestro país,
+          seleccionando 10 chefs jóvenes que desta- can en el panorama culinario
+          y que están presentes en estas gran pasarela de la gastronomía”.
+        </p>
+      </div>
+    </div>
+    <!-- About Us End Here -->
+
+    <!-- Patrocinadores Start Here -->
+    <div id="container_Patrocinadores" class="bg-[#F1F0EA] p-16">
+      <div class="container mx-auto">
+        <h1 class="flex justify-center text-4xl font-bold mb-10">
+          Patrocinadores
+        </h1>
+        <div
+          class="w-full flex justify-around mb-5 md:flex-nowrap flex-wrap md:text-left text-center"
+        >
+          <div class="xl:text-6xl md:mb-0 mb-4 text-4xl md:w-auto w-full">
+            LOGO
+          </div>
+          <div class="xl:text-6xl md:mb-0 mb-4 text-4xl md:w-auto w-full">
+            LOGO
+          </div>
+          <div class="xl:text-6xl md:mb-0 mb-4 text-4xl md:w-auto w-full">
+            LOGO
+          </div>
+          <div class="xl:text-6xl md:mb-0 mb-4 text-4xl md:w-auto w-full">
+            LOGO
+          </div>
+        </div>
+        <div
+          class="w-full flex justify-evenly md:flex-nowrap flex-wrap md:text-left text-center"
+        >
+          <div class="xl:text-6xl md:mb-0 mb-4 text-4xl md:w-auto w-full">
+            LOGO
+          </div>
+          <div class="xl:text-6xl md:mb-0 mb-4 text-4xl md:w-auto w-full">
+            LOGO
+          </div>
+          <div class="xl:text-6xl md:mb-0 mb-4 text-4xl md:w-auto w-full">
+            LOGO
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Patrocinadores End Here -->
+
+    <!-- Footer Start Here -->
+    <footer class="flex h-40 items-center md:px-6 px-4 bg-[#C8C6BA]">
+      <div
+        class="container mx-auto flex md:flex-nowrap flex-wrap justify-between"
+      >
+        <div>
+          <p class="md:text-2xl text-xs">
+            FOOTER - DIRECCIÓN Ad C. Lum ilincer ebatissum simerfe stratil ubi
+            sentus perit
+          </p>
+        </div>
+        <div
+          class="flex items-center space-x-2 md:w-auto w-full md:justify-start justify-end md:mt-0 mt-4"
+        >
+          <a href="#">
+            <ion-icon name="logo-facebook" class="h-8 w-8"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-instagram" class="h-8 w-8"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End Here -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
